@@ -1,0 +1,34 @@
+            STAGE1
+1  Input five numbers
+2  Determine the number of  negative numbers input 
+3  Determine the number of positive numbers input 
+4  Determine the number of zero number input 
+5  Print 
+
+           STAGE2
+1 Prompt user to enter first number
+2 collect 
+3 Store it as number1
+4 prompt user to enter second number 
+5 collect 
+6 store it as number2
+7 prompt user to enter third number 
+8 collect 
+9 store it as number3 
+10 prompt user to enter fourth number
+11 collect 
+12 store as number4
+13 prompt user to enter fifth number 
+14 collect 
+15 store as number5
+16 create a variable for positive number
+17 store as positive 
+18 create a variable for negative 
+19 store as negative 
+20 create a variable for the zero number 
+21 store as zero 
+22 compare the first  to 0 if >0 positive +1 if < 0 negative  +1 if = 0 zero +1
+23  do the same to the second number,third ,fourth and fifth 
+24 Display the positive 
+25 display negative 
+26 display zero 
