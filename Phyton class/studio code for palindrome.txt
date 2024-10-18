@@ -1,0 +1,18 @@
+           STAGE1
+1  prompt user to enter three-digit
+2  read from left to right or right to left 
+3  determine if a palindrome o not 
+4  display 
+
+            STAGE2
+1 prompt user to enter 3-digit number 
+2 collect 
+3 store as number
+4 calculate number / 100
+5 store as num1
+6 calculate number % 10
+7 store as num2 
+8 if num1 is equal to num2 
+9 display result as is a palindrome
+10 if num1 is not equal to num2
+11 display result as is not a palindrome 
