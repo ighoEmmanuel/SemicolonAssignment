@@ -20,7 +20,7 @@ public class BarsChart {
             while ( b <= number)
 
                      b++;{
-                System.out.println("*"+ z *number  );
+                System.out.println("*" *number  );
             }
             System.out.println("\n");
         }
