@@ -1,0 +1,17 @@
+prompt user to enter a number from the days of the week(1-7)
+collect
+store as number 
+if number = 1
+display Monday 
+if the number = 2
+display Tuesday
+if the number = 3
+display Wednesday
+if the number =4 
+display Thursday 
+if the number = 5
+display Friday 
+if number = 6
+display Saturday 
+if number = 7 
+display Sunday 

@@ -1,0 +1,14 @@
+prompt user to enter a number 
+collect
+store as a
+prompt user to enter b number
+collect 
+store as b  
+prompt user to enter c number
+collect 
+store as c
+calculate the root1 using (-b + (Math.sqrt((b * b) - (4 * a * c)))) / 2 * a
+store as root1
+calculate the root2 using (-b - (Math.sqrt((b * b) - (4 * a * c)))) / 2 * a
+store as root2
+display root1 and root2 at the same time using (The root are root1 and root2
