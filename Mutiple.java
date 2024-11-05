@@ -23,7 +23,7 @@ public class Mutiple{
     System.out.printf("your first number  %d triple is a mutiple of  your second number %d double ",number1,number2);
 }else
 
-      System.out.printf("your first number %d triple is not a mutiple of your second number %d double ",number1,number2);
+      System.out.printf("\nyour first number %d triple is not a mutiple of your second number %d double ",number1,number2);
 
 
 

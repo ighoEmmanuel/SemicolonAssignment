@@ -1,0 +1,1 @@
+price = int(input("Enter a purchase price of an item: "))
