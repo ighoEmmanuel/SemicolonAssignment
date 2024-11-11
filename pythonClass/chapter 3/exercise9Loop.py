@@ -10,3 +10,4 @@ while number > 0:
 
 for digit in digits:
     print(digit, end=' ')
+
