@@ -3,8 +3,10 @@ public class Merge {
 
 	int[] number = {1, 2, 3};
 	int[] numbers = {3, 5, 9};
+	int numberlength = number.length;
+	int numberslength = numbers.length;
 
-	int[] numberslen = number.length + numbers.length;
+	int numberslen = numberlength + numberslength;
 	int[] num = new int[numberslen];
 	for(int count = 0; count < number.length; count++) {
 		numberslen[count] = number[count];
@@ -13,7 +15,7 @@ public class Merge {
 		numberslen[count] = numbers[count];
 }
 	for(int count = 0; count < numberlen.length; count++) {
-		System.out.printt(numberlen[count] + " ");
+		System.out.printt(numberslen[count] + " ");
 }
 }
 
