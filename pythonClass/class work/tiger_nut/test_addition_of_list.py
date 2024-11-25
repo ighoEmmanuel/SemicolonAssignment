@@ -242,6 +242,16 @@ class TestSpaceFunction(TestCase):
 
 
 
+class TestDuplicateArray(TestCase):
+	def test_that_duplicate_function_exist(self):
+		addition_of_list.get_duplicate_array([1,2,3], [3, 4, 5])
+
+
+	def test_that_duplicate_function_return_value(self):
+		actual = addition_of_list.get_duplicate_array([1,2,3], [3, 4, 5])
+		expected = 3
+		self.assertEqual(actual, expected)	
+
 
 
 

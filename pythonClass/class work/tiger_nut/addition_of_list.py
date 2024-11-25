@@ -105,9 +105,14 @@ def get_duplicates(lst):
 
 def get_spaces_out(entered):
 	line = entered.replace(" ", "")
-
 	return line
 
+
+def get_duplicate_array(number, input:list)->int:
+	added = list(( set(number) & set(input)).elements())
+	return added
+
+	
 
 	
 	
