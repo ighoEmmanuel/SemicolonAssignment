@@ -1,7 +1,8 @@
-def __init__(self, name, price):
+class Product:
+  def __init__(self, name, price):
         self.name = name
         self.price = price
-def __str__(self):
+  def __str__(self):
         return f"{self.name} - ${self.price}"
 
 
@@ -21,6 +22,7 @@ def view_products():
 
 
 def add_to_cart(cart, product_name):
+    product_name = product_name.lower()
     for product in product_catalogue:
         if product.name.lower() == product_name.lower():
             cart.append(product)
@@ -52,7 +54,6 @@ def calculate_total(cart):
 
 
 def checkout(cart):
-    """Checks out the cart and clears it."""
     if cart:
         total = calculate_total(cart)
         print(f"\nThank you for shopping with us! Your total is ${total}.")

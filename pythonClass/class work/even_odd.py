@@ -33,12 +33,10 @@ def divide_list(numbers):
 def rearrange_list(input:list,y:int):
 	x = list()
 	collect = list()
-	for count in range(y-1):
-		input.pop(count)
-		x.append(input)
-	collect = input.extend(x)
-	return collect
-
+	for count in input:
+		if count == y
+			continue
+		collect.append(y)
 print(rearrange_list([1, 2, 3, 4], 3))
 	
 				 

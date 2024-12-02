@@ -1,0 +1,4 @@
+def get_sum(number:list):
+	return(count + count for count in number)
+
+print(get_sum([1, 2, 3]))
