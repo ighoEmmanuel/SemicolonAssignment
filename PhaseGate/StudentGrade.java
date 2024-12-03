@@ -24,16 +24,24 @@ public static void score(int numbers, int subject){
 			System.out.println("Invalid Input please enter number between(0 - 100)");
 			score = scanner.nextInt();
 }
-	scores[counter][count] = score;
+	scores[count][counter] = score;
 			}
 }
 	display();
+	for (int count = 0 ; count < subject ; count++){
+		System.out.print("\t\t\tSUB " + (count + 1));
+}
+	System.out.print("\t\t\tTOTAL");
 	for (int count = 0; count < numbers;count++){
+		int total = 0;
 		System.out.print("\nStudent " + (count + 1) + ":\t\t");
 		for (int counter = 0;counter < subject ;counter++){
-			System.out.print(scores[counter][count]  + "\t\t");
+			System.out.print((scores[count][counter])  + "\t\t\t");
+		total = total + scores[count][counter];
+		
 		}
-		System.out.println();
+		
+		System.out.println(total);
 }
 	display();
 	}
