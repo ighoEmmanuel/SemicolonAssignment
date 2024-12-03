@@ -23,17 +23,21 @@ public static void score(int numbersOfStudents, int subjectOffered){
 		while (score > 100 || score < 0){
 			System.out.println("Invalid Input please enter number between(0 - 100)");
 			score = scanner.nextInt();
+			scores[count][counter] = score;
 }
-	scores[count][counter] = score;
-			}
+			
 }
-	for (int count = 0; count < (scores.length + 1);count++){
-		System.out.print("\nStudent" + (count + 1) + ":\t\t");
-		for (int counter = 0;count < (scores[count].length + 1);counter++){
+	
+		int total = 0;
+		System.out.print("\nStudent " + (count + 1) + ":\t\t");
+		for (int counter = 0;count <  subjectOffered ;counter++){
 			System.out.print(scores[count][counter]  + "\t\t");
-		}
+			
 }
-	}
+
+}
+
+}
 public static void display(int number, int inputs){
 	System.out.println("=======================================================================================");
 
