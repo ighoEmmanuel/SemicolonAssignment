@@ -8,25 +8,35 @@ public class StudentGrade {
  		int subjects = scanner.nextInt();
 System.out.println("Saving >>>>>>>>>>>>>>>>>>>>>>>");
 System.out.println("Saved successfully");
-	score(students,subjects);
+	score(students, subjects);
+	
 }
 
-public static int score(int numbersOfStudents, int subjectOffered){
+public static void score(int numbersOfStudents, int subjectOffered){
  Scanner scanner = new Scanner(System.in);
- int answer = 0;
  int[][] scores = new int[numbersOfStudents][subjectOffered];
  for(int count = 0; count < numbersOfStudents;count++){
 	System.out.println("Entering score for student " + (count + 1));
-	for(int counter = 0; counter < subjectOffered; counter++){
+	for(int counter = 0 ; counter < subjectOffered ; counter++){
 		System.out.println("Enter Score for subject " + (counter + 1));
 		int score = scanner.nextInt();
 		while (score > 100 || score < 0){
 			System.out.println("Invalid Input please enter number between(0 - 100)");
 			score = scanner.nextInt();
 }
-	score[count][counter] = answer;
+	scores[count][counter] = score;
 			}
+}
+	for (int count = 0; count < (scores.length + 1);count++){
+		System.out.print("\nStudent" + (count + 1) + ":\t\t");
+		for (int counter = 0;count < (scores[count].length + 1);counter++){
+			System.out.print(scores[count][counter]  + "\t\t");
 		}
-	return answer;	
+}
 	}
+public static void display(int number, int inputs){
+	System.out.println("=======================================================================================");
+
+	
+}
 }	
