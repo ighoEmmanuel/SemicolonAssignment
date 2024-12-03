@@ -12,33 +12,32 @@ System.out.println("Saved successfully");
 	
 }
 
-public static void score(int numbersOfStudents, int subjectOffered){
+public static void score(int numbers, int subject){
  Scanner scanner = new Scanner(System.in);
- int[][] scores = new int[numbersOfStudents][subjectOffered];
- for(int count = 0; count < numbersOfStudents;count++){
+ int[][] scores = new int[numbers][subject];
+ for(int count = 0; count < numbers ;count++){
 	System.out.println("Entering score for student " + (count + 1));
-	for(int counter = 0 ; counter < subjectOffered ; counter++){
+	for(int counter = 0 ; counter < subject ; counter++){
 		System.out.println("Enter Score for subject " + (counter + 1));
 		int score = scanner.nextInt();
 		while (score > 100 || score < 0){
 			System.out.println("Invalid Input please enter number between(0 - 100)");
 			score = scanner.nextInt();
-			scores[count][counter] = score;
 }
-			
+	scores[counter][count] = score;
+			}
 }
-	
-		int total = 0;
+	display();
+	for (int count = 0; count < numbers;count++){
 		System.out.print("\nStudent " + (count + 1) + ":\t\t");
-		for (int counter = 0;count <  subjectOffered ;counter++){
-			System.out.print(scores[count][counter]  + "\t\t");
-			
+		for (int counter = 0;counter < subject ;counter++){
+			System.out.print(scores[counter][count]  + "\t\t");
+		}
+		System.out.println();
 }
-
-}
-
-}
-public static void display(int number, int inputs){
+	display();
+	}
+public static void display(){
 	System.out.println("=======================================================================================");
 
 	
