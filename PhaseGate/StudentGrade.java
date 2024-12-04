@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 public class StudentGrade {
 	public static void main(String[] args) {
 	Scanner scanner = new Scanner(System.in);
@@ -27,22 +28,24 @@ public static void score(int numbers, int subject){
 	scores[count][counter] = score;
 			}
 }
+	display();
+	System.out.print("STUDENTS");
 	for (int count = 0 ; count < subject ; count++){
-		System.out.print("\t\t\tSUB " + (count + 1));
+		System.out.print("\t\tSUB " + (count + 1));
 }
 	System.out.print("\t\tTOTAL\t\tAVE\t\tPOS");
 	for (int count = 0; count < numbers;count++){
 		int total = 0;
 		System.out.print("\nStudent " + (count + 1) + ":\t\t");
 		for (int counter = 0;counter < subject ;counter++){
-			System.out.print((scores[count][counter])  + "\t\t\t");
+			System.out.print((scores[count][counter])  + "\t\t");
 		total = total + scores[count][counter];
 		
 		}
 
 		double average = (double)total / subject;
 		System.out.printf("%-12s%.2f",total,average);
-	int position = 1;
+		int position = 1;
 	for (int counts = 0; counts < numbers;counts++){
 		int otherTotal = 0;
 		for(int counter = 0; counter < subject;counter++){
@@ -51,11 +54,17 @@ public static void score(int numbers, int subject){
 		if(otherTotal > total){
 			position++;
 	}
-	System.out.print("\t" + position);
-	
+	}			
+		System.out.println("\t\t" + position);
 }
+		display();
+}
+public static void display(){
+	System.out.println("==============================================================================================================================================================================================================================================================");
+
+}		
 
 
-}
-}
+
+
 }
