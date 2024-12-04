@@ -27,11 +27,10 @@ public static void score(int numbers, int subject){
 	scores[count][counter] = score;
 			}
 }
-	display();
 	for (int count = 0 ; count < subject ; count++){
 		System.out.print("\t\t\tSUB " + (count + 1));
 }
-	System.out.print("\t\t\tTOTAL");
+	System.out.print("\t\tTOTAL\t\tAVE\t\tPOS");
 	for (int count = 0; count < numbers;count++){
 		int total = 0;
 		System.out.print("\nStudent " + (count + 1) + ":\t\t");
@@ -40,14 +39,23 @@ public static void score(int numbers, int subject){
 		total = total + scores[count][counter];
 		
 		}
-		
-		System.out.println(total);
-}
-	display();
-	}
-public static void display(){
-	System.out.println("=======================================================================================");
 
+		double average = (double)total / subject;
+		System.out.printf("%-12s%.2f",total,average);
+	int position = 1;
+	for (int counts = 0; counts < numbers;counts++){
+		int otherTotal = 0;
+		for(int counter = 0; counter < subject;counter++){
+			otherTotal += scores[counts][counter];
+	}
+		if(otherTotal > total){
+			position++;
+	}
+	System.out.print("\t" + position);
 	
 }
-}	
+
+
+}
+}
+}
