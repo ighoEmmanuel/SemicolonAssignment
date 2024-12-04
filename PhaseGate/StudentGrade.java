@@ -56,9 +56,17 @@ public static void score(int numbers, int subject){
 	}
 	}			
 		System.out.println("\t\t" + position);
+	
 }
+
 		display();
+for(int counter = 0; counter < subject;counter++){
+		System.out.print("\nSUBJECT SUMMARY");
+		System.out.print("\nSub " + (counter + 1));
 }
+}
+
+
 public static void display(){
 	System.out.println("==============================================================================================================================================================================================================================================================");
 
