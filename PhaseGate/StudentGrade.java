@@ -41,6 +41,9 @@ public class StudentGrade {
         System.out.print("\t\tTOTAL\t\tAVE\t\tPOS");
         display();
 
+        int bestStudentIndex = 0;
+        int highestTotalScore = 0;
+
         for (int count = 0; count < numbers; count++) {
             int total = 0;
             System.out.print("\nStudent " + (count + 1) + ":\t\t");
@@ -63,15 +66,21 @@ public class StudentGrade {
                 }
             }
             System.out.print("\t\t" + position);
+
+            if (total > highestTotalScore) {
+                highestTotalScore = total;
+                bestStudentIndex = count;
+            }
         }
 
         display();
-        System.out.print("\nSUBJECT SUMMARY");
 
         int hardestSubjectIndex = 0;
         int easiestSubjectIndex = 0;
         int maxFailures = 0;
         int maxPasses = 0;
+
+        System.out.print("\nSUBJECT SUMMARY");
 
         for (int counter = 0; counter < subject; counter++) {
             System.out.print("\nSub " + (counter + 1));
@@ -81,7 +90,6 @@ public class StudentGrade {
             int pass = 0;
             int failed = 0;
             int smallest = scores[0][counter];
-            int smallestSubject = 0;
 
             for (int count = 0; count < scores.length; count++) {
                 if (scores[count][counter] > largest) {
@@ -90,7 +98,6 @@ public class StudentGrade {
                 }
                 if (scores[count][counter] < smallest) {
                     smallest = scores[count][counter];
-                    smallestSubject = count;
                 }
                 sum += scores[count][counter];
                 if (scores[count][counter] >= 50) {
@@ -101,14 +108,13 @@ public class StudentGrade {
             }
 
             System.out.print("\nThe highest score is: student " + (student + 1) + " scoring " + largest);
-            System.out.print("\nThe Smallest is: student " + (smallestSubject + 1) + " scoring " + smallest);
+            System.out.print("\nThe smallest score is: student " + (smallest + 1) + " scoring " + smallest);
             double average = (double) sum / numbers;
             System.out.print("\nTotal: " + sum);
             System.out.print("\nAverage score is: " + average);
             System.out.print("\nNumber of passes: " + pass);
-            System.out.print("\nNumber of Fails: " + failed);
+            System.out.print("\nNumber of fails: " + failed);
 
-            // Update hardest and easiest subjects
             if (failed > maxFailures) {
                 maxFailures = failed;
                 hardestSubjectIndex = counter;
@@ -122,10 +128,10 @@ public class StudentGrade {
         System.out.print("\nThe hardest subject is Subject " + (hardestSubjectIndex + 1) + " with " + maxFailures + " failures");
         System.out.print("\nThe easiest subject is Subject " + (easiestSubjectIndex + 1) + " with " + maxPasses + " passes");
         System.out.println();
+        System.out.println("The overall best student is Student " + (bestStudentIndex + 1) + " with a total score of " + highestTotalScore + ".");
     }
 
     public static void display() {
         System.out.print("\n==============================================================================================================================================================================\n");
-    
-}
+    }
 }
