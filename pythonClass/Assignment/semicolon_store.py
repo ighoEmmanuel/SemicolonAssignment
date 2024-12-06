@@ -1,58 +1,81 @@
-def name_of_user():
-    return input("What is the customer's Name? ")
+from datetime import datetime
 
+def print_receipt():
+    print("SEMICOLON STORES")
+    print("MAIN BRANCH")
+    print("LOCATION: 312, HERBERT MACAULAY WAY, SABO YABA, LAGOS.")
+    print("TEL: 83293828343")
+    
+    customer_name = input("Enter the customer's name: ")
+    receipt = ""
+    grand_total = 0.0
 
-def customer_details():
-    return input("What did the customer buy? ")
-
-
-def number_of_pieces():
     while True:
-        try:
-            return int(input("How many pieces? "))
-        except ValueError:
-            print("Please enter a valid number.")
+        item_name = input("What did the customer buy? ")
+        quantity = int(input("How many pieces? "))
+        unit_price = float(input("How much per unit? "))
+        total_price = quantity * unit_price
+        grand_total += total_price
 
+        receipt += f"{item_name}\t\t{quantity}\t\t{unit_price:.2f}\t\t{total_price:.2f}\n"
 
-def per_unit():
-    while True:
-        try:
-            return float(input("How much per unit? "))
-        except ValueError:
-            print("Please enter a valid price.")
-
-
-def calculate_total(pieces, unit_price):
-    return pieces * unit_price
-
-
-def options():
-    items = []
-    while True:
-        customer_item = customer_details()
-        pieces = number_of_pieces()
-        unit_price = per_unit()
-        total_price = calculate_total(pieces, unit_price)
-
-        items.append((customer_item, pieces, unit_price, total_price))
-
-        option = input("Add more items? (yes/no): ").strip().lower()
-        if option != "yes":
+        add_more = input("Add more items? (yes/no): ").strip().lower()
+        if add_more != "yes":
             break
-    return items
 
+    cashier_name = input("What is your name? ")
+    discount = float(input("How much discount will the customer get? "))
+    vat_rate = 0.175
+    vat_total = grand_total * vat_rate
+    bill_total = (grand_total - discount) + vat_total
 
-def print_items():
-    customer_name = name_of_user()
-    print(f"\nCustomer Name: {customer_name}")
+    date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    items = options()
+    print("\n" + "=" * 60)
+    print("SEMICOLON STORES")
+    print("MAIN BRANCH")
+    print("LOCATION: 312, HERBERT MACAULAY WAY, SABO YABA, LAGOS.")
+    print("TEL: 83293828343")
+    print(f"Date: {date}")
+    print(f"Cashier: {cashier_name}")
+    print(f"Customer Name: {customer_name}")
+    print("\nITEM\t\tQTY\t\tPRICE\t\tTOTAL(NGN)")
+    print("=" * 60)
+    print(receipt, end="")
+    print("-" * 60)
+    print(f"\t\tGrand Total: \t\t\t{grand_total:.2f}")
+    print(f"\t\tDiscount: \t\t\t{discount:.2f}")
+    print(f"\t\tVAT @ 17.50%: \t\t\t{vat_total:.2f}")
+    print("=" * 60)
+    print(f"\t\tBill Total: \t\t\t{bill_total:.2f}")
+    print("=" * 60)
+    print(f"THIS IS NOT A RECEIPT. KINDLY PAY: {bill_total:.2f}")
+    print("=" * 60)
 
-    print("\n\t\tITEM\t\tQTY\t\tPRICE\t\t\tTOTAL(NGN)")
-    print("----------------------------------------------------------------")
-    for item, qty, price, total in items:
-        print(f"\t\t{item:<20}\t{qty:<10}\t{price:<10.2f}\t{total:<10.2f}")
-    print("----------------------------------------------------------------")
+    amount_paid = float(input("How much did the customer give to you? "))
+    balance = amount_paid - bill_total
 
+    print("\n" + "=" * 60)
+    print("SEMICOLON STORES")
+    print("MAIN BRANCH")
+    print("LOCATION: 312, HERBERT MACAULAY WAY, SABO YABA, LAGOS.")
+    print("TEL: 83293828343")
+    print(f"Date: {date}")
+    print(f"Cashier: {cashier_name}")
+    print(f"Customer Name: {customer_name}")
+    print("\nITEM\t\tQTY\t\tPRICE\t\tTOTAL(NGN)")
+    print("=" * 60)
+    print(receipt, end="")
+    print("-" * 60)
+    print(f"\t\tGrand Total: \t\t\t{grand_total:.2f}")
+    print(f"\t\tDiscount: \t\t\t{discount:.2f}")
+    print(f"\t\tVAT @ 17.50%: \t\t\t{vat_total:.2f}")
+    print("=" * 60)
+    print(f"\t\tBill Total: \t\t\t{bill_total:.2f}")
+    print(f"\t\tAmount Paid: \t\t\t{amount_paid:.2f}")
+    print(f"\t\tBalance: \t\t\t{balance:.2f}")
+    print("=" * 60)
+    print("THANK YOU FOR YOUR PATRONAGE")
+    print("=" * 60)
 
-    print_items()
+print_receipt()

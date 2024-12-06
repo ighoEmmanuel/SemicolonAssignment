@@ -83,7 +83,8 @@ public class SemicolonStore {
 	System.out.println("\t\tBill Total:" + "\t\t\t" + billTotal);
         System.out.println("============================================================");
 	System.out.println("THIS IS NOT AN RECEIPT KINDLY PAY " + billTotal);
-	
+        System.out.println("============================================================");
+
 	System.out.println("How much did the customer give to you?");
 	double paided = scanner.nextDouble();
 	
