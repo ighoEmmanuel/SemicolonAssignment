@@ -13,26 +13,43 @@ public class TicTacToe {
             System.out.println();
         }
 
+        System.out.println("Who will start first? Enter 1 for Player 1 (X) or 2 for Player 2 (O):");
+        int firstPlayer = scanner.nextInt();
+        while (firstPlayer != 1 && firstPlayer != 2) {
+            System.out.println("Invalid input. Please enter 1 or 2:");
+            firstPlayer = scanner.nextInt();
+        }
+
+        int startingCount = firstPlayer - 1; 
+
+   
         for (int move = 0; move < 9; move++) {
-            int count = move % 2;
+            int count = (move + startingCount) % 2;
             System.out.println("Player " + (count + 1));
 
-            int row = -1;
-            int col = -1;
+            int row = 0;
+            int col = 0;
 
-            int inputAttempts = 0;
             do {
-                if (inputAttempts > 0) {
-                    System.out.println("Invalid input or cell already occupied. Try again.");
-                }
                 System.out.println("Enter number of row (1-3):");
                 row = scanner.nextInt();
+                while (row > 3) {
+                    System.out.println("Invalid input");
+                    row = scanner.nextInt();
+                }
                 System.out.println("Enter number of column (1-3):");
                 col = scanner.nextInt();
-                inputAttempts++;
+                while (col > 3) {
+                    System.out.println("Invalid input");
+                    col = scanner.nextInt();
+                }
+
+                if (!board[row - 1][col - 1].equals("EMPTY")) {
+                    System.out.println("Cell already occupied.");
+                }
+  
             } while (row < 1 || row > 3 || col < 1 || col > 3 || !board[row - 1][col - 1].equals("EMPTY"));
 
-        
             board[row - 1][col - 1] = count == 0 ? "X" : "O";
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
