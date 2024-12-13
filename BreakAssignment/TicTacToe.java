@@ -13,7 +13,7 @@ public class TicTacToe {
             System.out.println();
         }
 
-        System.out.println("Who will start first? Enter 1 for Player 1 (X) or 2 for Player 2 (O):");
+        System.out.println("Who will start first? \nEnter 1 for Player 1 (X) or 2 for Player 2 (O):");
         int firstPlayer = scanner.nextInt();
         while (firstPlayer != 1 && firstPlayer != 2) {
             System.out.println("Invalid input. Please enter 1 or 2:");
