@@ -11,7 +11,7 @@ public class DiaryApp {
         int choice;
         do {
             displayMenu();
-            choice = Integer.parseInt(scanner.nextLine());
+            choice = scanner.nextInt();
             handleChoice(choice);
         } while (choice != 8);
     }
