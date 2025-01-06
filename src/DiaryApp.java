@@ -91,7 +91,6 @@ public class DiaryApp {
         String id = scanner.nextLine();
         if (!diaryEntries.containsKey(id)) {
             System.out.println("ID not found.");
-            return;
         }
         if (passwords.containsKey(id)) {
             System.out.print("Enter your password: ");
@@ -121,14 +120,13 @@ public class DiaryApp {
         String id = scanner.nextLine();
         if (!diaryEntries.containsKey(id)) {
             System.out.println("Diary ID not found.");
-            return;
         }
         if (passwords.containsKey(id)) {
             System.out.print("Enter your password: ");
             String password = scanner.nextLine();
             if (!passwords.get(id).equals(password)) {
                 System.out.println("Incorrect password. Cannot add entry.");
-                return;
+
             }
         }
         System.out.print("Enter your new entry: ");
@@ -178,7 +176,7 @@ public class DiaryApp {
         System.out.println("1. Replace the entire entry");
         System.out.println("2. Append new content to the existing entry");
         System.out.print("Enter your choice (1 or 2): ");
-        int choice = Integer.parseInt(scanner.nextLine());
+        int choice = scanner.nextInt();
 
         if (choice == 1) {
             System.out.print("Enter the new content for this diary: ");
