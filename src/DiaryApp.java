@@ -64,14 +64,17 @@ public class DiaryApp {
 
     public static void createDiary() {
         System.out.print("What would you like to name your diary (ID): ");
-        String id = scanner.nextLine();
+        String id = scanner.next();
+
         System.out.print("Enter your secret: ");
+        scanner.nextLine();
         String secret = scanner.nextLine();
         diaryEntries.put(id, secret);
         System.out.println("Diary Created!!!");
     }
 
     public static void lockDiary() {
+        scanner.nextLine();
         System.out.print("Enter diary (ID) name: ");
         String id = scanner.nextLine();
         if (passwords.containsKey(id)) {
@@ -87,6 +90,7 @@ public class DiaryApp {
     }
 
      public  static void unlockDiary() {
+        scanner.nextLine();
         System.out.print("Enter diary (ID) name: ");
         String id = scanner.nextLine();
         if (!diaryEntries.containsKey(id)) {
@@ -116,6 +120,7 @@ public class DiaryApp {
     }
 
     public static void addEntry() {
+        scanner.nextLine();
         System.out.print("Enter the diary (ID) where you want to add an entry: ");
         String id = scanner.nextLine();
         if (!diaryEntries.containsKey(id)) {
@@ -138,6 +143,7 @@ public class DiaryApp {
     }
 
     public static void findEntryById() {
+        scanner.nextLine();
         System.out.print("Enter diary (ID) name: ");
         String id = scanner.nextLine();
         if (!diaryEntries.containsKey(id)) {
@@ -157,46 +163,50 @@ public class DiaryApp {
     }
 
     public static void updateEntry() {
+        scanner.nextLine();
         System.out.print("Enter the diary (ID) you want to update: ");
         String id = scanner.nextLine();
 
         if (!diaryEntries.containsKey(id)) {
             System.out.println("Diary ID not found.");
-        }
+        }else {
 
-        if (passwords.containsKey(id)) {
-            System.out.print("Enter your password: ");
-            String password = scanner.nextLine();
-            if (!passwords.get(id).equals(password)) {
-                System.out.println("Incorrect password. Cannot update entry.");
+            if (passwords.containsKey(id)) {
+                System.out.print("Enter your password: ");
+                String password = scanner.nextLine();
+                if (!passwords.get(id).equals(password)) {
+                    System.out.println("Incorrect password. Cannot update entry.");
+                }
             }
-        }
 
-        System.out.println("Do you want to:");
-        System.out.println("1. Replace the entire entry");
-        System.out.println("2. Append new content to the existing entry");
-        System.out.print("Enter your choice (1 or 2): ");
-        int choice = scanner.nextInt();
+            System.out.println("Do you want to:");
+            System.out.println("1. Replace the entire entry");
+            System.out.println("2. Append new content to the existing entry");
+            System.out.print("Enter your choice (1 or 2): ");
+            int choice = scanner.nextInt();
 
-        if (choice == 1) {
-            System.out.print("Enter the new content for this diary: ");
-            String newContent = scanner.nextLine();
-            diaryEntries.put(id, newContent);
-            System.out.println("Diary entry replaced successfully!");
-        } else if (choice == 2) {
-            System.out.print("Enter the content to append: ");
-            String additionalContent = scanner.nextLine();
-            String updatedContent = diaryEntries.get(id);
-            String update  = updatedContent + "\n" + additionalContent;
-            diaryEntries.put(id, update);
-            System.out.println("update successful!");
-        } else {
-            System.out.println("Invalid choice. Update canceled.");
+            scanner.nextLine();
+            if (choice == 1) {
+                System.out.print("Enter the new content for this diary: ");
+                String newContent = scanner.nextLine();
+                diaryEntries.put(id, newContent);
+                System.out.println("Diary entry replaced successfully!");
+            } else if (choice == 2) {
+                System.out.print("Enter the content to append: ");
+                String additionalContent = scanner.nextLine();
+                String updatedContent = diaryEntries.get(id);
+                String update = updatedContent + "\n" + additionalContent;
+                diaryEntries.put(id, update);
+                System.out.println("update successful!");
+            } else {
+                System.out.println("Invalid choice. Update canceled.");
+            }
         }
 
     }
 
     public static void deleteEntry() {
+        scanner.nextLine();
         System.out.println("Enter diary (ID) name:");
         String diary  = scanner.nextLine();
         if (diaryEntries.containsKey(diary)) {
@@ -210,11 +220,12 @@ public class DiaryApp {
                 }
             } else {
                 diaryEntries.remove(diary);
+                System.out.println("Diary deleted successfully!");
             }
         }else {
             System.out.println("Diary ID not found.");
         }
-            System.out.println("Diary deleted successfully!");
+
         }
     }
 
