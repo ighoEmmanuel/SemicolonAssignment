@@ -38,6 +38,14 @@ public class MySet {
         }
     }
 
+    public void addAll(String[] itemsToAdd) {
+        for (String item : itemsToAdd) {
+            if (!list.contains(item)) {
+                list.add(item);
+                size++;
+            }
+        }
+    }
     public void remove(String element) {
         list.remove(element);
     }

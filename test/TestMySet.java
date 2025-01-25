@@ -48,5 +48,13 @@ public class TestMySet {
         set.remove("Emmanuel");
         assertEquals(0,set.size());
     }
+
+    @Test
+    public void TestMySetAddAll(){
+        MySet set = new MySet();
+        String[] myArray = {"Emmanuel","igho"};
+        set.addAll(myArray);
+        assertEquals(2,set.size());
+    }
 }
 
