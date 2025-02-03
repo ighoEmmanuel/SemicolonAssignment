@@ -40,6 +40,9 @@ public class TestMyQueue {
         myQueue.remove("okay");
         assertEquals(1,myQueue.size());
 
+        myQueue.addToQueue("Together");
+        assertEquals(2,myQueue.size());
+
     }
 
 
