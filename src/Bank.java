@@ -20,9 +20,10 @@ public class Bank {
 
 
 
-public int getAccountNumber() {
-    return accountCounter + 1;
-}
+    public int getAccountNumber() {
+        return bank.size() + 1;
+    }
+
 
 public void deposit(int accountNumber, double amount){
         try {
@@ -38,7 +39,7 @@ public void deposit(int accountNumber, double amount){
         }
 }
 
-    private Account findAccount(int accountNumber) {
+    public Account findAccount(int accountNumber) {
         for (Account account : bank) {
             if (account.getAccountNumber() == accountNumber) {
                 return account;
@@ -62,12 +63,17 @@ public void deposit(int accountNumber, double amount){
         }
     }
 
-    public void withdraw(int accountNumber, double amount) {
+    public void withdraw(int accountNumber, double amount,String password) {
         try {
             account = findAccount(accountNumber);
             if (account != null) {
-                account.withdraw(amount);
-                System.out.println("Withdraw successful");
+                if (account.pinValidator(password)) {
+                    account.withdraw(amount);
+                    System.out.println("Withdraw successful");
+                }else{
+                    System.out.println("Incorrect password");
+                    System.out.println("withdraw failed");
+                }
             } else {
                 System.out.println("Account not found");
             }
@@ -89,6 +95,8 @@ public void deposit(int accountNumber, double amount){
                 System.out.println("Transfer successful");
             } else {
                 fromAccount.deposit(amount);
+                System.out.println("Transfer failed" +
+                        " beneficiary Account not found");
             }
         }catch (IllegalArgumentException e){
             System.out.println(e.getMessage());

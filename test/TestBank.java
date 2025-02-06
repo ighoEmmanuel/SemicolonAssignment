@@ -18,7 +18,7 @@ public class TestBank {
         Bank bank = new Bank();
         bank.createAccount("Emmanuel", "Igho", "Emmanuel");
         bank.deposit(1, 5_000);
-        bank.withdraw(1, 2_000);
+        bank.withdraw(1, 2_000,"Emmanuel");
         assertEquals(3_000, bank.getBalance(1, "Emmanuel"));
     }
 

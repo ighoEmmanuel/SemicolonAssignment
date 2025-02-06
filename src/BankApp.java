@@ -2,11 +2,15 @@ import java.util.Scanner;
 import javax.swing.*;
 
 public class BankApp {
-    public static Bank bank = new Bank();
+    static Bank bank = new Bank();
 
     public static void main(String[] args) {
+        main();
+    }
+
+    public static void main() {
         String choice = "";
-        do {
+
             choice = input("""
                     Welcome to the Bank
                     
@@ -19,9 +23,6 @@ public class BankApp {
                     5. Transfer Money
                     6. Exit""");
 
-            while (!choice.matches("[1-9]")) {
-                choice = input("Invalid Entry Please choose between 1 and 9");
-            }
 
 
             switch (choice) {
@@ -34,7 +35,7 @@ public class BankApp {
                 default -> prompt("Invalid choice." +
                         "Enter from 1-6");
             }
-        } while (!choice.equals("6"));
+
 
     }
 
@@ -46,12 +47,18 @@ public class BankApp {
     public static void transfer() {
         try {
             int ownerAccountNumber = Integer.parseInt(input("Enter owner account number: "));
+            if(bank.findAccount(ownerAccountNumber) == null) {
+                System.out.println("Account not found");
+                return;
+            }
             int beneficiary = Integer.parseInt(input("Enter beneficiary number: "));
+            if(bank.findAccount(beneficiary) == null) {
+                System.out.println("Account not found");
+                return;
+            }
             String password = input("Enter password: ");
             String amountStr = input("Enter Amount: ");
-
-            amountStr = amountStr.replaceAll("[^0-9.]", "");
-
+            amountStr = amountStr.replaceAll("[, ]", "");
             if (amountStr.isEmpty()) {
                 throw new IllegalArgumentException("Invalid amount entered.");
             }
@@ -60,16 +67,24 @@ public class BankApp {
             bank.transfer(ownerAccountNumber, beneficiary, amount, password);
         } catch (IllegalArgumentException e) {
             prompt(e.getMessage());
+        }finally {
+            main();
         }
     }
 
     public static void checkBalance() {
         try {
             int accountNumber = Integer.parseInt(input("Enter account number: "));
+            if(bank.findAccount(accountNumber) == null) {
+                System.out.println("Account not found");
+                return;
+            }
             String password = input("Enter password: ");
             prompt(String.valueOf(bank.getBalance(accountNumber, password)));
         } catch (IllegalArgumentException e) {
             prompt(e.getMessage());
+        }finally{
+            main();
         }
     }
 
@@ -77,21 +92,21 @@ public class BankApp {
     public static void withdraw() {
         try {
             int accountNumber = Integer.parseInt(input("Enter account number: "));
-            String amountStr = input("Enter Amount: ");
-
-            amountStr = amountStr.replaceAll("[^0-9.]", "");
-
-            if (amountStr.isEmpty()) {
-                throw new IllegalArgumentException("Invalid amount entered.");
+            if(bank.findAccount(accountNumber) == null) {
+                System.out.println("Account not found");
+                return;
             }
-
+            String amountStr = input("Enter Amount: ");
+            amountStr = amountStr.replaceAll("[, ]", "");
             double amount = Double.parseDouble(amountStr);
-
-            bank.withdraw(accountNumber, amount);
+            String password = input("Enter password: ");
+            bank.withdraw(accountNumber, amount,password);
 
         } catch (IllegalArgumentException e) {
             prompt(e.getMessage());
             prompt("Withdraw failed.");
+        }finally {
+            main();
         }
     }
 
@@ -99,18 +114,18 @@ public class BankApp {
     public static void deposit() {
         try {
             int accountNumber = Integer.parseInt(input("Enter account number: "));
-            String amountStr = input("Enter Amount: ");
-
-            amountStr = amountStr.replaceAll("[^0-9.]", "");
-
-            if (amountStr.isEmpty()) {
-                throw new IllegalArgumentException("Invalid amount entered.");
+            if(bank.findAccount(accountNumber) == null) {
+                System.out.println("Account not found");
+                return;
             }
-
+            String amountStr = input("Enter Amount: ");
+            amountStr = amountStr.replaceAll("[, ]", "");
             double amount = Double.parseDouble(amountStr);
             bank.deposit(accountNumber, amount);
         } catch (IllegalArgumentException e) {
             prompt("Error: " + e.getMessage());
+        }finally {
+            main();
         }
     }
 
@@ -122,6 +137,8 @@ public class BankApp {
             bank.createAccount(firstName, lastName, password);
         } catch (IllegalArgumentException e) {
             prompt("Error: " + e.getMessage());
+        }finally {
+            main();
         }
     }
 
