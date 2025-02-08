@@ -1,6 +1,5 @@
 package diaryApp;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -10,31 +9,35 @@ public class Entry {
     private String content;
     private Date date;
 
-    public Entry(int id,String title, String content, String dateStr) {
+    public Entry(int id, String title, String content) {
         if (title == null || title.isEmpty()) {
             throw new IllegalArgumentException("title cannot be null or empty");
         }
         if (id < 0) {
             throw new IllegalArgumentException("id cannot be negative");
         }
-        if ( dateStr == null || dateStr.isEmpty()) {
-            throw new IllegalArgumentException("Password cannot be null or empty");
-        }
         this.id = id;
         this.title = title;
         this.content = content;
-        this.date = parseDate(dateStr);
+        this.date = new Date();
     }
 
-    private Date parseDate(String dateStr) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-        dateFormat.setLenient(false);
-        try {
-            return dateFormat.parse(dateStr);
-        } catch (ParseException e) {
-            throw new IllegalArgumentException("Date format is invalid. Expected format: dd/MM/yyyy");
+    public void setTitle(String title) {
+        if (title == null || title.isEmpty()) {
+            throw new IllegalArgumentException("title cannot be null or empty");
+        } else {
+            this.title = title;
         }
     }
+
+    public void setContent(String content) {
+        if (content == null || content.isEmpty()) {
+            throw new IllegalArgumentException("content cannot be null or empty");
+        } else {
+            this.content = content;
+        }
+    }
+
     public int getId() {
         return id;
     }
@@ -47,7 +50,17 @@ public class Entry {
         return content;
     }
 
-    public Date getDate() {
-        return date;
+    public String getDate() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        return dateFormat.format(date);
+    }
+
+    public void update(String title, String content) {
+        if (title != null && !title.isEmpty()) {
+            this.title = title;
+        }
+        if (content != null && !content.isEmpty()) {
+            this.content = content;
+        }
     }
 }

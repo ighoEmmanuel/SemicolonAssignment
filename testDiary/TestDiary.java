@@ -1,8 +1,8 @@
 import diaryApp.Diary;
+import diaryApp.Entry;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestDiary {
 
@@ -21,10 +21,41 @@ public class TestDiary {
 
 
     @Test
-    public void testMyDiaryCanAddEntry() {
+    public void testIfMyDiaryIsUnlockedAndMyDiaryIsLocked() {
         Diary diary = new Diary("Emmanuel","jojo");
         diary.unlock("jojo");
-        diary.createEntry("title","My guy","23/05/2024");
+        diary.createEntry("title","My guy");
+        diary.lock();
+        assertTrue(diary.isLocked());
+    }
 
+    @Test
+    public void testMyDiaryFindFunctionIsWorking(){
+        Diary diary = new Diary("Emmanuel","jojo");
+        diary.unlock("jojo");
+        diary.createEntry("title","My guy");
+        Entry input = diary.findEntry(1);
+        assertEquals("title",input.getTitle());
+    }
+
+    @Test
+    public void testMyDeleteFunctionIsWorking(){
+        Diary diary = new Diary("Emmanuel","jojo");
+        diary.unlock("jojo");
+        diary.createEntry("title","My guy");
+        diary.createEntry("oat","my man");
+        diary.delete(1);
+        assertThrows(IllegalArgumentException.class, ()->{diary.findEntry(1);},
+                "Id not found");
+    }
+
+    @Test
+    public void testMyDiaryCanUpdateEntry(){
+        Diary diary = new Diary("Emmanuel","jojo");
+        diary.unlock("jojo");
+        diary.createEntry("title","My guy");
+        diary.createEntry("oat","my man");
+        diary.update(1,"emma","okay");
+        assertEquals("emma",diary.findEntry(1).getTitle());
     }
 }
