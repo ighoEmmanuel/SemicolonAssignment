@@ -1,5 +1,6 @@
 package diaryApp;
 
+import javax.swing.*;
 import java.util.ArrayList;
 
 public class Diary {
@@ -39,13 +40,13 @@ public class Diary {
     }
 
     public void createEntry(String title, String body) {
-        if(isLocked()){
-            throw new IllegalArgumentException("Diary is locked " +
-                    "Unlock first!!");
-        }else{
-            Entry newEntry = new Entry(getId(), title, body);
+        if(!isLocked()){
+            int  id = getId();
+            Entry newEntry = new Entry(id, title, body);
             entries.add(newEntry);
-            System.out.println("New entry created");
+            JOptionPane.showMessageDialog(null,"New entry created\nYour Entry Id :" + id);
+        }else{
+            throw new IllegalArgumentException("Diary is locked unlock first");
         }
     }
 
@@ -98,5 +99,20 @@ public class Diary {
         }
         return false;
     }
+    public String viewEntries() {
+        if (entries.isEmpty()) {
+            return "No entries available.";
+        }
+
+        StringBuilder result = new StringBuilder("Your Entries:\n");
+        for (Entry entry : entries) {
+            result.append("Entry ID: ").append(entry.getId()).append("\n")
+                    .append("Title: ").append(entry.getTitle()).append("\n")
+                    .append("Content: ").append(entry.getContent()).append("\n")
+                    .append("-------------------\n");
+        }
+        return result.toString();
+    }
+
 }
 

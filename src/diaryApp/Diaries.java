@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Diaries {
     private ArrayList<Diary> diaries = new ArrayList<>();
+    private boolean isLocked = false;
 
 
     public void addDiary(String userName, String passWord) {
@@ -13,12 +14,14 @@ public class Diaries {
 
 
     public void delete(String username, String password) {
-        Diary toDelete = findIdByUsername(username);
-        if (toDelete != null) {
-                toDelete.validatePassword(password);
-                diaries.remove(toDelete);
+        Diary diary = findIdByUsername(username);
+        if (diary != null && diary.validatePassword(password)) {
+            diaries.remove(diary);
+        }else{
+            throw new IllegalArgumentException("Invalid username or password");
         }
     }
+
 
     public Diary findIdByUsername(String username) {
         for(Diary diary : diaries) {
@@ -30,18 +33,13 @@ public class Diaries {
     }
 
 
-    public boolean checkPassword(String password) {
-        for (Diary diary : diaries) {
-            diary.unlock(password);
-            return true;
-        }
-        return false;
+    public boolean checkPassword(String username, String password) {
+        Diary diary = findIdByUsername(username);
+        return diary != null && diary.validatePassword(password);
     }
 
-    public void lock() {
-        for (Diary diary : diaries) {
-            diary.lock();
-        }
-    }
+
+
+
 
 }

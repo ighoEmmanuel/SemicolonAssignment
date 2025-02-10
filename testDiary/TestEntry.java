@@ -23,7 +23,7 @@ public class TestEntry{
 
     @Test
     public void testMyEntryGetIdFunction(){
-        Entry entry = new Entry(1,"Emmanuel","a guy","12/2/2020");
+        Entry entry = new Entry(1,"Emmanuel","a guy");
         assertEquals("Emmanuel",entry.getTitle());
     }
 }
