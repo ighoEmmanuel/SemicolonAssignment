@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.util.Scanner;
 
 public class DiaryApp {
-    private static final Scanner scanner = new Scanner(System.in);
+    private static final Scanner  scanner = new Scanner(System.in);
     static Diaries diaries = new Diaries();
     static Diary diary;
 
@@ -29,8 +29,8 @@ public class DiaryApp {
                 case "2" -> logIn();
                 case "3" -> deleteDiary();
                 case "4" -> {
-                    System.exit(0);
                     prompt("Thank you for using my program");
+                    System.exit(0);
                 }
             }
 
