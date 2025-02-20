@@ -33,10 +33,17 @@ class TestBankMethods (TestCase):
         self.assertEqual(1000,self.bank.get_balance(1,"2345"))
 
 
-    def test_bank_can_transfer_money_and_return_balance(self):
+    def test_that_bank_can_transfer_money_and_return_balance(self):
         self.bank.create_account("Emmanuel","igho","2345",15)
         self.bank.deposit(1,2000)
         self.bank.create_account("lase","igho","4567",12)
         self.bank.transfer(1,2,500,"2345")
         self.assertEqual(500,self.bank.get_balance(2,"4567"))
         self.assertEqual(1500,self.bank.get_balance(1,"2345"))
+
+        
+
+    def test_that_my_bank_transfer_can_throw_error_if_account_is_not_found(self):
+        self.bank.create_account("Emmanuel","igho","2345",15)
+        with self.assertRaises(ValueError):
+            self.bank.transfer(1,2,500,"2345")

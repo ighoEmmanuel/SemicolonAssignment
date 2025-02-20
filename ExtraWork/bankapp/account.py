@@ -11,6 +11,10 @@ class Account:
     def balance(self):
         return self._balance
 
+    @balance.setter
+    def balance(self, value):
+        self._balance = value
+
     def transfer(self, amount, beneficiary):
         if amount <= 0:
             raise ValueError("Transfer amount must be greater than zero.")

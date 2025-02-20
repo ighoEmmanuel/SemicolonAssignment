@@ -1,5 +1,5 @@
 from ExtraWork.diaryapp.entry import Entry
-
+from datetime import datetime
 
 class Diary:
     def __init__(self, username, password):
@@ -11,6 +11,8 @@ class Diary:
     @property
     def username(self):
         return self._username
+
+
 
     @property
     def is_locked(self):
@@ -31,42 +33,52 @@ class Diary:
     def create_entry(self, title, body):
         if not self.is_locked:
             entry_id = self.get_id()
-            new_entry = Entry(entry_id, title, body)
+            date = datetime.today().date()
+            new_entry = Entry(entry_id, title, body,date)
             self.entries.append(new_entry)
             print(f"New entry created\nYour Entry ID: {entry_id}")
         else:
             raise ValueError("Diary is locked, unlock first")
 
-    def find_entry(self, id):
+    def find_entry(self, id_number):
         if self.is_locked:
             raise ValueError("Unlock diary first!!")
+
         for entry in self.entries:
-            if entry.id == id:
+            if entry.id == id_number:
                 return entry
+
         raise ValueError("ID not found")
 
-    def delete(self, id):
+    def delete_entry(self, id_number):
         if self.is_locked:
             print("Unlock diary first!!")
             return
         to_remove = None
         for entry in self.entries:
-            if entry.id == id:
+            if entry.id == id_number:
                 to_remove = entry
                 break
         if to_remove:
             self.entries.remove(to_remove)
 
-    def update(self, id, title, body):
+    def update(self, id_number, title, body):
         if self.is_locked:
             raise ValueError("Unlock diary first!!")
-        entry = self.find_entry(id)
-        if entry:
-            entry.title = title
-            entry.content = body
+        for entry in self.entries:
+            if entry.id == id_number:
+                date = datetime.today().date()
+                entry = self.find_entry(id)
+                entry.title(title)
+                entry.content(body)
+                entry.date(date)
+            else:
+                raise ValueError("ID not found")
 
     def validate_password(self, password):
         return password == self.password
+
+
 
     def view_entries(self):
         output = []
@@ -74,5 +86,6 @@ class Diary:
             output.append(f"Entry ID: {entry.id}\n"
                           f"Title: {entry.title}\n"
                           f"Content: {entry.content}\n"
+                          f"Date: {entry.date}\n"
                           f"-------------------")
         return "\n".join(output)

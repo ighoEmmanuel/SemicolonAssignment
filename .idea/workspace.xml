@@ -4,33 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c931796-18f8-4dab-a050-148dcca571e2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ExtraWork/bankapp/account.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraWork/bankapp/bank.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraWork/bankapp/test/test_account.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraWork/bankapp/test/test_bank.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraWork/datastructure/mystack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraWork/diaryapp/diary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraWork/diaryapp/entry.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraWork/test_diary/test_dairy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraWork/test_diary/test_entry.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pythonClass/TvApp/Tv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pythonClass/TvApp/test_tv.py" afterDir="false" />
+    <list default="true" id="2c931796-18f8-4dab-a050-148dcca571e2" name="Changes" comment="assignment">
+      <change afterPath="$PROJECT_DIR$/ExtraWork/bankapp/bankmainapp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtraWork/datastructure/myqueue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtraWork/datastructure/test/test_myqueue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtraWork/diaryapp/diaries.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtraWork/diaryapp/diarymainapp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtraWork/enumtask/geopolitical.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtraWork/enumtask/test/test_geopolitical.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pythonClass/class work/encrttyptiondemo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/SemicolonAssignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SemicolonAssignment.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtraWork/my_array.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtraWork/test_my_array.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBike/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBike/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBike/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBike/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBike/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBike/MyBike.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBike/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBike/src/MyBike.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBike/test/TestMyBike.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythonClass/class work/test_dict.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythonClass/class work/test_list_task.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtraWork/bankapp/account.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtraWork/bankapp/account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtraWork/bankapp/bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtraWork/bankapp/bank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtraWork/bankapp/test/test_bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtraWork/bankapp/test/test_bank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtraWork/datastructure/mystack.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtraWork/datastructure/mystack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtraWork/datastructure/test/test_my_stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtraWork/datastructure/test/test_my_stack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtraWork/diaryapp/diary.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtraWork/diaryapp/diary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtraWork/diaryapp/entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtraWork/diaryapp/entry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtraWork/test_diary/test_dairy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtraWork/test_diary/test_entry.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonClass/TvApp/Tv.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonClass/TvApp/tv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonClass/TvApp/test_tv.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonClass/TvApp/test_tv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,75 +67,97 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_account.TestAccount.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_account.TestAccount.test_that_transfer_can_transfer_from_account_one_to_account_two_and_get_balance.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_account.TestAccount.test_that_transfer_negative_from_account_one_to_account_two.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_bank.TestBankMethods.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_bank.TestBankMethods.test_bank_can_deposit_money_and_return_balance.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_bank.TestBankMethods.test_bank_can_transfer_money_and_return_balance.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_bank.TestBankMethods.test_create_account_updates_dictionary_size.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_class_work.TestMyFunctionInMyClassWork.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_class_work.TestMyFunctionInMyClassWork.test_that_last_list_adder_throw_error_inValid_input.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_class_works.TestMyFunctionInMyClassWork.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_class_works.TestMyFunctionInMyClassWork.test_that_last_list_adder_exist.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_class_works.TestMyFunctionInMyClassWork.test_that_last_list_adder_return_correct_value.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_dairy.TestDiary.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_entry.TestEntry.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_entry.TestEntry.test_my_entry_return_error_if_title_is_null.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_entry.TestEntry.test_my_id_number_return_error_message_if_negative.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_my_array.MyTestCase.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_my_array.MyTestCase.test_that_get_size_returns_correct_value.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_my_array.TestMyArray.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_my_array.TestMyArray.test_my_array_add_function_return_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_my_array.TestMyArray.test_my_array_add_function_return_error_message.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_my_array.TestMyArray.test_my_array_add_items_function.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_my_array.TestMyArray.test_my_array_return_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_myarray.TestMyArray.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_myarray.TestMyArray.test_my_array.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_myarray.TestMyArray.test_my_array_add_function_return_error_message.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_myarray.TestMyArray.test_my_array_add_items_function.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_myarray.TestMyArray.test_my_array_can_remove_from_the_array_and_return_the_size.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_myarray.TestMyArray.test_my_array_return_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_set.TestMySet.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_set.TestMySet.test_mySet_add_and_get_size.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_set.TestMySet.test_mySet_can_add_all_at_once.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_set.TestMySet.test_mySet_can_remove.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_set.TestMySet.test_mySet_contains_an_element.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_set.TestMySet.test_mySet_isEmpty.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_set.TestMySet.test_my_set_add_and_get_size.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_set.TestMySet.test_my_set_can_remove_all_elements_at_once.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_set.TestMySet.test_myset_isNotEmpty.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_set.TestMySet.test_that_when_i_add_elements_to_my_set_and_i_will_get_the_data_in_the_set.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_stack.TestStack.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_tv.TestTv.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_tv.TestTv.test_my_tv_increase_volume.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_tv.TestTv.test_my_tv_move_channel_return_error_if_not_on.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_tv.TestTv.test_my_tv_unmute_function.executor&quot;: &quot;Run&quot;,
-    &quot;Python.account.executor&quot;: &quot;Run&quot;,
-    &quot;Python.clas_work.executor&quot;: &quot;Run&quot;,
-    &quot;Python.class_works.executor&quot;: &quot;Run&quot;,
-    &quot;Python.encrtypt_text.executor&quot;: &quot;Run&quot;,
-    &quot;Python.numberP.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_encrtypt_text (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_encrtypt_text.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_list_task.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;a1cdf1f4&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Dell/SemicolonAssignment&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_account.TestAccount.executor": "Run",
+    "Python tests.Python tests for test_account.TestAccount.test_that_transfer_can_transfer_from_account_one_to_account_two_and_get_balance.executor": "Run",
+    "Python tests.Python tests for test_account.TestAccount.test_that_transfer_negative_from_account_one_to_account_two.executor": "Run",
+    "Python tests.Python tests for test_bank.TestBankMethods.executor": "Run",
+    "Python tests.Python tests for test_bank.TestBankMethods.test_bank_can_deposit_money_and_return_balance.executor": "Run",
+    "Python tests.Python tests for test_bank.TestBankMethods.test_bank_can_transfer_money_and_return_balance.executor": "Run",
+    "Python tests.Python tests for test_bank.TestBankMethods.test_create_account_updates_dictionary_size.executor": "Run",
+    "Python tests.Python tests for test_bank.TestBankMethods.test_that_bank_can_transfer_money_and_return_balance.executor": "Run",
+    "Python tests.Python tests for test_bank.TestBankMethods.test_that_my_bank_transfer_can_throw_error_if_account_is_not_found.executor": "Run",
+    "Python tests.Python tests for test_class_work.TestMyFunctionInMyClassWork.executor": "Run",
+    "Python tests.Python tests for test_class_work.TestMyFunctionInMyClassWork.test_that_last_list_adder_throw_error_inValid_input.executor": "Run",
+    "Python tests.Python tests for test_class_works.TestMyFunctionInMyClassWork.executor": "Run",
+    "Python tests.Python tests for test_class_works.TestMyFunctionInMyClassWork.test_that_last_list_adder_exist.executor": "Run",
+    "Python tests.Python tests for test_class_works.TestMyFunctionInMyClassWork.test_that_last_list_adder_return_correct_value.executor": "Run",
+    "Python tests.Python tests for test_dairy.TestDiary.executor": "Run",
+    "Python tests.Python tests for test_dairy.TestDiary.test_my_delete_entry_function_is_working.executor": "Run",
+    "Python tests.Python tests for test_dairy.TestDiary.test_my_delete_function_is_working.executor": "Run",
+    "Python tests.Python tests for test_dairy.TestDiary.test_my_diary_can_update_entry.executor": "Run",
+    "Python tests.Python tests for test_dairy.TestDiary.test_that_diary_exists.executor": "Run",
+    "Python tests.Python tests for test_dairy.TestDiary.test_that_my_diary_unlocks_and_then_locked.executor": "Run",
+    "Python tests.Python tests for test_entry.TestEntry.executor": "Run",
+    "Python tests.Python tests for test_entry.TestEntry.test_my_entry_return_error_if_title_is_null.executor": "Run",
+    "Python tests.Python tests for test_entry.TestEntry.test_my_id_number_return_error_message_if_negative.executor": "Run",
+    "Python tests.Python tests for test_geopolitical.TestGeoPolitical.executor": "Run",
+    "Python tests.Python tests for test_my_array.MyTestCase.executor": "Run",
+    "Python tests.Python tests for test_my_array.MyTestCase.test_that_get_size_returns_correct_value.executor": "Run",
+    "Python tests.Python tests for test_my_array.TestMyArray.executor": "Run",
+    "Python tests.Python tests for test_my_array.TestMyArray.test_my_array_add_function_return_data.executor": "Run",
+    "Python tests.Python tests for test_my_array.TestMyArray.test_my_array_add_function_return_error_message.executor": "Run",
+    "Python tests.Python tests for test_my_array.TestMyArray.test_my_array_add_items_function.executor": "Run",
+    "Python tests.Python tests for test_my_array.TestMyArray.test_my_array_return_data.executor": "Run",
+    "Python tests.Python tests for test_my_stack.TestMyStack.executor": "Run",
+    "Python tests.Python tests for test_my_stack.TestMyStack.test_that_my_stack_can_add_elements.executor": "Run",
+    "Python tests.Python tests for test_my_stack.TestMyStack.test_that_my_stack_can_remove_elements.executor": "Run",
+    "Python tests.Python tests for test_my_stack.TestMyStack.test_that_my_stack_is_empty.executor": "Run",
+    "Python tests.Python tests for test_myarray.TestMyArray.executor": "Run",
+    "Python tests.Python tests for test_myarray.TestMyArray.test_my_array.executor": "Run",
+    "Python tests.Python tests for test_myarray.TestMyArray.test_my_array_add_function_return_error_message.executor": "Run",
+    "Python tests.Python tests for test_myarray.TestMyArray.test_my_array_add_items_function.executor": "Run",
+    "Python tests.Python tests for test_myarray.TestMyArray.test_my_array_can_remove_from_the_array_and_return_the_size.executor": "Run",
+    "Python tests.Python tests for test_myarray.TestMyArray.test_my_array_return_data.executor": "Run",
+    "Python tests.Python tests for test_myqueue.TestMyQueue.executor": "Run",
+    "Python tests.Python tests for test_myqueue.TestMyQueue.test_that_my_queue_can_check_the_last_element_with_out_removing_it.executor": "Run",
+    "Python tests.Python tests for test_myqueue.TestMyQueue.test_that_my_queue_can_remove_items_to_the_queue.executor": "Run",
+    "Python tests.Python tests for test_myqueue.TestMyQueue.test_that_my_queue_throws_error_when_queue_is_empty_and_wants_to_check_the_first_element.executor": "Run",
+    "Python tests.Python tests for test_set.TestMySet.executor": "Run",
+    "Python tests.Python tests for test_set.TestMySet.test_mySet_add_and_get_size.executor": "Run",
+    "Python tests.Python tests for test_set.TestMySet.test_mySet_can_add_all_at_once.executor": "Run",
+    "Python tests.Python tests for test_set.TestMySet.test_mySet_can_remove.executor": "Run",
+    "Python tests.Python tests for test_set.TestMySet.test_mySet_contains_an_element.executor": "Run",
+    "Python tests.Python tests for test_set.TestMySet.test_mySet_isEmpty.executor": "Run",
+    "Python tests.Python tests for test_set.TestMySet.test_my_set_add_and_get_size.executor": "Run",
+    "Python tests.Python tests for test_set.TestMySet.test_my_set_can_remove_all_elements_at_once.executor": "Run",
+    "Python tests.Python tests for test_set.TestMySet.test_myset_isNotEmpty.executor": "Run",
+    "Python tests.Python tests for test_set.TestMySet.test_that_when_i_add_elements_to_my_set_and_i_will_get_the_data_in_the_set.executor": "Run",
+    "Python tests.Python tests for test_stack.TestStack.executor": "Run",
+    "Python tests.Python tests for test_tv.TestTv.executor": "Run",
+    "Python tests.Python tests for test_tv.TestTv.test_my_tv_increase_volume.executor": "Run",
+    "Python tests.Python tests for test_tv.TestTv.test_my_tv_move_channel_return_error_if_not_on.executor": "Run",
+    "Python tests.Python tests for test_tv.TestTv.test_my_tv_unmute_function.executor": "Run",
+    "Python tests.Python tests for test_tv.TestTvFunctions.executor": "Run",
+    "Python.Tv.executor": "Run",
+    "Python.account.executor": "Run",
+    "Python.bankmainapp.executor": "Run",
+    "Python.clas_work.executor": "Run",
+    "Python.class_works.executor": "Run",
+    "Python.diarymainapp.executor": "Run",
+    "Python.encrttyptiondemo.executor": "Run",
+    "Python.encrtypt_text.executor": "Run",
+    "Python.geopolitical.executor": "Run",
+    "Python.numberP.executor": "Run",
+    "Python.test_encrtypt_text (1).executor": "Run",
+    "Python.test_encrtypt_text.executor": "Run",
+    "Python.test_list_task.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "21166200",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Dell/SemicolonAssignment",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Dell\SemicolonAssignment\ExtraWork\datastructure\test" />
@@ -152,14 +169,14 @@
       <command value="numberP" />
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_dairy.TestDiary">
+  <component name="RunManager">
     <configuration name="Python tests for test_dairy.TestDiary" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SemicolonAssignment" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ExtraWork/test_diary" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ExtraWork/diaryapp/test_diary" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -169,19 +186,19 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_dairy.TestDiary.test_if_my_diary_is_locked" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_dairy.TestDiary.test_that_my_diary_unlocks_and_then_locked" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SemicolonAssignment" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ExtraWork/test_diary" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ExtraWork/diaryapp/test_diary" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_dairy.TestDiary.test_if_my_diary_is_locked&quot;" />
+      <option name="_new_target" value="&quot;test_dairy.TestDiary.test_that_my_diary_unlocks_and_then_locked&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -191,7 +208,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ExtraWork/test_diary" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ExtraWork/diaryapp/test_diary" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -201,53 +218,53 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_entry.TestEntry.test_my_entry_return_error_if_title_is_null" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_tv.TestTv" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SemicolonAssignment" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ExtraWork/test_diary" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonClass/TvApp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_entry.TestEntry.test_my_entry_return_error_if_title_is_null&quot;" />
+      <option name="_new_target" value="&quot;test_tv.TestTv&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_entry.TestEntry.test_my_id_number_return_error_message_if_negative" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_tv.TestTvFunctions" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SemicolonAssignment" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ExtraWork/test_diary" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonClass/TvApp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_entry.TestEntry.test_my_id_number_return_error_message_if_negative&quot;" />
+      <option name="_new_target" value="&quot;test_tv.TestTvFunctions&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests for test_dairy.TestDiary" />
-        <item itemvalue="Python tests.Python tests for test_dairy.TestDiary.test_if_my_diary_is_locked" />
+        <item itemvalue="Python tests.Python tests for test_dairy.TestDiary.test_that_my_diary_unlocks_and_then_locked" />
         <item itemvalue="Python tests.Python tests for test_entry.TestEntry" />
-        <item itemvalue="Python tests.Python tests for test_entry.TestEntry.test_my_id_number_return_error_message_if_negative" />
-        <item itemvalue="Python tests.Python tests for test_entry.TestEntry.test_my_entry_return_error_if_title_is_null" />
+        <item itemvalue="Python tests.Python tests for test_tv.TestTvFunctions" />
+        <item itemvalue="Python tests.Python tests for test_tv.TestTv" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
-        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PY-243.24978.54" />
+        <option value="bundled-python-sdk-91e3b7efe1d4-466328ff949b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.24978.54" />
       </set>
     </attachedChunks>
   </component>
@@ -282,12 +299,35 @@
       <workItem from="1739633533389" duration="9124000" />
       <workItem from="1739718270519" duration="4638000" />
       <workItem from="1739769743093" duration="3127000" />
-      <workItem from="1739778025010" duration="972000" />
+      <workItem from="1739778025010" duration="3413000" />
+      <workItem from="1739782216246" duration="2642000" />
+      <workItem from="1739789021437" duration="3100000" />
+      <workItem from="1739798736019" duration="3126000" />
+      <workItem from="1739824323036" duration="4109000" />
+      <workItem from="1739850733281" duration="3960000" />
+      <workItem from="1739863207390" duration="21073000" />
+      <workItem from="1739890231206" duration="4299000" />
+      <workItem from="1739949113603" duration="3223000" />
+      <workItem from="1740038515800" duration="8534000" />
     </task>
+    <task id="LOCAL-00001" summary="assignment">
+      <option name="closed" value="true" />
+      <created>1739779446578</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739779446578</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="my bike work" />
+    <MESSAGE value="assignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -304,10 +344,15 @@
     <SUITE FILE_PATH="coverage/SemicolonAssignment$class_works.coverage" NAME="class_works Coverage Results" MODIFIED="1739354870517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$encrtypt_text.coverage" NAME="encrtypt_text Coverage Results" MODIFIED="1737639236722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonClass/class work/tiger_nut" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$test_encrtypt_text.coverage" NAME="test_encrtypt_text Coverage Results" MODIFIED="1737638239256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonClass/class work" />
-    <SUITE FILE_PATH="coverage/SemicolonAssignment$clas_work.coverage" NAME="clas_work Coverage Results" MODIFIED="1739352751914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JavaClass" />
-    <SUITE FILE_PATH="coverage/SemicolonAssignment$.coverage" NAME=" Coverage Results" MODIFIED="1739772833100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork/test_diary" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$test_list_task.coverage" NAME="test_list_task Coverage Results" MODIFIED="1737632992287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonClass/class work" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$test_encrtypt_text__1_.coverage" NAME="test_encrtypt_text (1) Coverage Results" MODIFIED="1737639244643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonClass/class work" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$account.coverage" NAME="account Coverage Results" MODIFIED="1739451319355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork/bankapp" />
+    <SUITE FILE_PATH="coverage/SemicolonAssignment$Tv.coverage" NAME="Tv Coverage Results" MODIFIED="1740042216991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonClass/TvApp" />
+    <SUITE FILE_PATH="coverage/SemicolonAssignment$encrttyptiondemo.coverage" NAME="encrttyptiondemo Coverage Results" MODIFIED="1740048523110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonClass/class work" />
+    <SUITE FILE_PATH="coverage/SemicolonAssignment$clas_work.coverage" NAME="clas_work Coverage Results" MODIFIED="1739352751914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JavaClass" />
+    <SUITE FILE_PATH="coverage/SemicolonAssignment$.coverage" NAME=" Coverage Results" MODIFIED="1740044008173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork/diaryapp/test_diary" />
+    <SUITE FILE_PATH="coverage/SemicolonAssignment$geopolitical.coverage" NAME="geopolitical Coverage Results" MODIFIED="1739950415571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork/enumtask" />
+    <SUITE FILE_PATH="coverage/SemicolonAssignment$diarymainapp.coverage" NAME="diarymainapp Coverage Results" MODIFIED="1740046818727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork/diaryapp" />
+    <SUITE FILE_PATH="coverage/SemicolonAssignment$bankmainapp.coverage" NAME="bankmainapp Coverage Results" MODIFIED="1740040427556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork/bankapp" />
   </component>
 </project>
