@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c931796-18f8-4dab-a050-148dcca571e2" name="Changes" comment="assignment">
-      <change afterPath="$PROJECT_DIR$/ExtraWork/bankapp/bankmainapp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraWork/datastructure/myqueue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraWork/datastructure/test/test_myqueue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraWork/diaryapp/diaries.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraWork/diaryapp/diarymainapp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraWork/enumtask/geopolitical.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtraWork/enumtask/test/test_geopolitical.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pythonClass/class work/encrttyptiondemo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SemicolonAssignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SemicolonAssignment.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtraWork/bankapp/account.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtraWork/bankapp/account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtraWork/bankapp/bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtraWork/bankapp/bank.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtraWork/bankapp/test/test_bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtraWork/bankapp/test/test_bank.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtraWork/datastructure/mystack.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtraWork/datastructure/mystack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtraWork/datastructure/test/test_my_stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtraWork/datastructure/test/test_my_stack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtraWork/diaryapp/diary.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtraWork/diaryapp/diary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtraWork/diaryapp/entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtraWork/diaryapp/entry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtraWork/test_diary/test_dairy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtraWork/test_diary/test_entry.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythonClass/TvApp/Tv.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonClass/TvApp/tv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythonClass/TvApp/test_tv.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonClass/TvApp/test_tv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +126,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "21166200",
+    "git-widget-placeholder": "73e18654",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Dell/SemicolonAssignment",
     "node.js.detected.package.eslint": "true",
@@ -308,7 +288,7 @@
       <workItem from="1739863207390" duration="21073000" />
       <workItem from="1739890231206" duration="4299000" />
       <workItem from="1739949113603" duration="3223000" />
-      <workItem from="1740038515800" duration="8534000" />
+      <workItem from="1740038515800" duration="9634000" />
     </task>
     <task id="LOCAL-00001" summary="assignment">
       <option name="closed" value="true" />
@@ -318,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739779446578</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="assignment">
+      <option name="closed" value="true" />
+      <created>1740049319172</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740049319172</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +336,7 @@
     <SUITE FILE_PATH="coverage/SemicolonAssignment$test_encrtypt_text__1_.coverage" NAME="test_encrtypt_text (1) Coverage Results" MODIFIED="1737639244643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonClass/class work" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$account.coverage" NAME="account Coverage Results" MODIFIED="1739451319355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork/bankapp" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$Tv.coverage" NAME="Tv Coverage Results" MODIFIED="1740042216991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonClass/TvApp" />
-    <SUITE FILE_PATH="coverage/SemicolonAssignment$encrttyptiondemo.coverage" NAME="encrttyptiondemo Coverage Results" MODIFIED="1740048523110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonClass/class work" />
+    <SUITE FILE_PATH="coverage/SemicolonAssignment$encrttyptiondemo.coverage" NAME="encrttyptiondemo Coverage Results" MODIFIED="1740049103237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonClass/class work" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$clas_work.coverage" NAME="clas_work Coverage Results" MODIFIED="1739352751914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JavaClass" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$.coverage" NAME=" Coverage Results" MODIFIED="1740044008173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork/diaryapp/test_diary" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$geopolitical.coverage" NAME="geopolitical Coverage Results" MODIFIED="1739950415571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork/enumtask" />
