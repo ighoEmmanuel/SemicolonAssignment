@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c931796-18f8-4dab-a050-148dcca571e2" name="Changes" comment="assignment">
+      <change afterPath="$PROJECT_DIR$/ExtraWork/pascaltriangle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,13 +121,14 @@
     "Python.encrtypt_text.executor": "Run",
     "Python.geopolitical.executor": "Run",
     "Python.numberP.executor": "Run",
+    "Python.pascaltriangle.executor": "Run",
     "Python.test_encrtypt_text (1).executor": "Run",
     "Python.test_encrtypt_text.executor": "Run",
     "Python.test_list_task.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "73e18654",
+    "git-widget-placeholder": "bfe43233",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Dell/SemicolonAssignment",
     "node.js.detected.package.eslint": "true",
@@ -288,7 +290,9 @@
       <workItem from="1739863207390" duration="21073000" />
       <workItem from="1739890231206" duration="4299000" />
       <workItem from="1739949113603" duration="3223000" />
-      <workItem from="1740038515800" duration="9634000" />
+      <workItem from="1740038515800" duration="10649000" />
+      <workItem from="1740073516908" duration="1310000" />
+      <workItem from="1740125059322" duration="5086000" />
     </task>
     <task id="LOCAL-00001" summary="assignment">
       <option name="closed" value="true" />
@@ -306,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740049319172</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="assignment">
+      <option name="closed" value="true" />
+      <created>1740050304610</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740050304610</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +351,7 @@
     <SUITE FILE_PATH="coverage/SemicolonAssignment$encrttyptiondemo.coverage" NAME="encrttyptiondemo Coverage Results" MODIFIED="1740049103237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pythonClass/class work" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$clas_work.coverage" NAME="clas_work Coverage Results" MODIFIED="1739352751914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JavaClass" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$.coverage" NAME=" Coverage Results" MODIFIED="1740044008173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork/diaryapp/test_diary" />
+    <SUITE FILE_PATH="coverage/SemicolonAssignment$pascaltriangle.coverage" NAME="pascaltriangle Coverage Results" MODIFIED="1740134057438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$geopolitical.coverage" NAME="geopolitical Coverage Results" MODIFIED="1739950415571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork/enumtask" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$diarymainapp.coverage" NAME="diarymainapp Coverage Results" MODIFIED="1740046818727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork/diaryapp" />
     <SUITE FILE_PATH="coverage/SemicolonAssignment$bankmainapp.coverage" NAME="bankmainapp Coverage Results" MODIFIED="1740040427556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork/bankapp" />
