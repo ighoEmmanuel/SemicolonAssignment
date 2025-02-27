@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c931796-18f8-4dab-a050-148dcca571e2" name="Changes" comment="assignment">
-      <change afterPath="$PROJECT_DIR$/ExtraWork/pascaltriangle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtraWork/src/ClassActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtraWork/src/SevenSegmentDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SemicolonAssignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SemicolonAssignment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtraWork/SevenSegementDisplay" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SemicolonAssignment" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,11 +23,13 @@
       <list>
         <option value="Python Unit Test" />
         <option value="Python Script" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -48,100 +55,106 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_account.TestAccount.executor": "Run",
-    "Python tests.Python tests for test_account.TestAccount.test_that_transfer_can_transfer_from_account_one_to_account_two_and_get_balance.executor": "Run",
-    "Python tests.Python tests for test_account.TestAccount.test_that_transfer_negative_from_account_one_to_account_two.executor": "Run",
-    "Python tests.Python tests for test_bank.TestBankMethods.executor": "Run",
-    "Python tests.Python tests for test_bank.TestBankMethods.test_bank_can_deposit_money_and_return_balance.executor": "Run",
-    "Python tests.Python tests for test_bank.TestBankMethods.test_bank_can_transfer_money_and_return_balance.executor": "Run",
-    "Python tests.Python tests for test_bank.TestBankMethods.test_create_account_updates_dictionary_size.executor": "Run",
-    "Python tests.Python tests for test_bank.TestBankMethods.test_that_bank_can_transfer_money_and_return_balance.executor": "Run",
-    "Python tests.Python tests for test_bank.TestBankMethods.test_that_my_bank_transfer_can_throw_error_if_account_is_not_found.executor": "Run",
-    "Python tests.Python tests for test_class_work.TestMyFunctionInMyClassWork.executor": "Run",
-    "Python tests.Python tests for test_class_work.TestMyFunctionInMyClassWork.test_that_last_list_adder_throw_error_inValid_input.executor": "Run",
-    "Python tests.Python tests for test_class_works.TestMyFunctionInMyClassWork.executor": "Run",
-    "Python tests.Python tests for test_class_works.TestMyFunctionInMyClassWork.test_that_last_list_adder_exist.executor": "Run",
-    "Python tests.Python tests for test_class_works.TestMyFunctionInMyClassWork.test_that_last_list_adder_return_correct_value.executor": "Run",
-    "Python tests.Python tests for test_dairy.TestDiary.executor": "Run",
-    "Python tests.Python tests for test_dairy.TestDiary.test_my_delete_entry_function_is_working.executor": "Run",
-    "Python tests.Python tests for test_dairy.TestDiary.test_my_delete_function_is_working.executor": "Run",
-    "Python tests.Python tests for test_dairy.TestDiary.test_my_diary_can_update_entry.executor": "Run",
-    "Python tests.Python tests for test_dairy.TestDiary.test_that_diary_exists.executor": "Run",
-    "Python tests.Python tests for test_dairy.TestDiary.test_that_my_diary_unlocks_and_then_locked.executor": "Run",
-    "Python tests.Python tests for test_entry.TestEntry.executor": "Run",
-    "Python tests.Python tests for test_entry.TestEntry.test_my_entry_return_error_if_title_is_null.executor": "Run",
-    "Python tests.Python tests for test_entry.TestEntry.test_my_id_number_return_error_message_if_negative.executor": "Run",
-    "Python tests.Python tests for test_geopolitical.TestGeoPolitical.executor": "Run",
-    "Python tests.Python tests for test_my_array.MyTestCase.executor": "Run",
-    "Python tests.Python tests for test_my_array.MyTestCase.test_that_get_size_returns_correct_value.executor": "Run",
-    "Python tests.Python tests for test_my_array.TestMyArray.executor": "Run",
-    "Python tests.Python tests for test_my_array.TestMyArray.test_my_array_add_function_return_data.executor": "Run",
-    "Python tests.Python tests for test_my_array.TestMyArray.test_my_array_add_function_return_error_message.executor": "Run",
-    "Python tests.Python tests for test_my_array.TestMyArray.test_my_array_add_items_function.executor": "Run",
-    "Python tests.Python tests for test_my_array.TestMyArray.test_my_array_return_data.executor": "Run",
-    "Python tests.Python tests for test_my_stack.TestMyStack.executor": "Run",
-    "Python tests.Python tests for test_my_stack.TestMyStack.test_that_my_stack_can_add_elements.executor": "Run",
-    "Python tests.Python tests for test_my_stack.TestMyStack.test_that_my_stack_can_remove_elements.executor": "Run",
-    "Python tests.Python tests for test_my_stack.TestMyStack.test_that_my_stack_is_empty.executor": "Run",
-    "Python tests.Python tests for test_myarray.TestMyArray.executor": "Run",
-    "Python tests.Python tests for test_myarray.TestMyArray.test_my_array.executor": "Run",
-    "Python tests.Python tests for test_myarray.TestMyArray.test_my_array_add_function_return_error_message.executor": "Run",
-    "Python tests.Python tests for test_myarray.TestMyArray.test_my_array_add_items_function.executor": "Run",
-    "Python tests.Python tests for test_myarray.TestMyArray.test_my_array_can_remove_from_the_array_and_return_the_size.executor": "Run",
-    "Python tests.Python tests for test_myarray.TestMyArray.test_my_array_return_data.executor": "Run",
-    "Python tests.Python tests for test_myqueue.TestMyQueue.executor": "Run",
-    "Python tests.Python tests for test_myqueue.TestMyQueue.test_that_my_queue_can_check_the_last_element_with_out_removing_it.executor": "Run",
-    "Python tests.Python tests for test_myqueue.TestMyQueue.test_that_my_queue_can_remove_items_to_the_queue.executor": "Run",
-    "Python tests.Python tests for test_myqueue.TestMyQueue.test_that_my_queue_throws_error_when_queue_is_empty_and_wants_to_check_the_first_element.executor": "Run",
-    "Python tests.Python tests for test_set.TestMySet.executor": "Run",
-    "Python tests.Python tests for test_set.TestMySet.test_mySet_add_and_get_size.executor": "Run",
-    "Python tests.Python tests for test_set.TestMySet.test_mySet_can_add_all_at_once.executor": "Run",
-    "Python tests.Python tests for test_set.TestMySet.test_mySet_can_remove.executor": "Run",
-    "Python tests.Python tests for test_set.TestMySet.test_mySet_contains_an_element.executor": "Run",
-    "Python tests.Python tests for test_set.TestMySet.test_mySet_isEmpty.executor": "Run",
-    "Python tests.Python tests for test_set.TestMySet.test_my_set_add_and_get_size.executor": "Run",
-    "Python tests.Python tests for test_set.TestMySet.test_my_set_can_remove_all_elements_at_once.executor": "Run",
-    "Python tests.Python tests for test_set.TestMySet.test_myset_isNotEmpty.executor": "Run",
-    "Python tests.Python tests for test_set.TestMySet.test_that_when_i_add_elements_to_my_set_and_i_will_get_the_data_in_the_set.executor": "Run",
-    "Python tests.Python tests for test_stack.TestStack.executor": "Run",
-    "Python tests.Python tests for test_tv.TestTv.executor": "Run",
-    "Python tests.Python tests for test_tv.TestTv.test_my_tv_increase_volume.executor": "Run",
-    "Python tests.Python tests for test_tv.TestTv.test_my_tv_move_channel_return_error_if_not_on.executor": "Run",
-    "Python tests.Python tests for test_tv.TestTv.test_my_tv_unmute_function.executor": "Run",
-    "Python tests.Python tests for test_tv.TestTvFunctions.executor": "Run",
-    "Python.Tv.executor": "Run",
-    "Python.account.executor": "Run",
-    "Python.bankmainapp.executor": "Run",
-    "Python.clas_work.executor": "Run",
-    "Python.class_works.executor": "Run",
-    "Python.diarymainapp.executor": "Run",
-    "Python.encrttyptiondemo.executor": "Run",
-    "Python.encrtypt_text.executor": "Run",
-    "Python.geopolitical.executor": "Run",
-    "Python.numberP.executor": "Run",
-    "Python.pascaltriangle.executor": "Run",
-    "Python.test_encrtypt_text (1).executor": "Run",
-    "Python.test_encrtypt_text.executor": "Run",
-    "Python.test_list_task.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "bfe43233",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Dell/SemicolonAssignment",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Python tests.Python tests for test_account.TestAccount.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_account.TestAccount.test_that_transfer_can_transfer_from_account_one_to_account_two_and_get_balance.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_account.TestAccount.test_that_transfer_negative_from_account_one_to_account_two.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_bank.TestBankMethods.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_bank.TestBankMethods.test_bank_can_deposit_money_and_return_balance.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_bank.TestBankMethods.test_bank_can_transfer_money_and_return_balance.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_bank.TestBankMethods.test_create_account_updates_dictionary_size.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_bank.TestBankMethods.test_that_bank_can_transfer_money_and_return_balance.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_bank.TestBankMethods.test_that_my_bank_transfer_can_throw_error_if_account_is_not_found.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_class_work.TestMyFunctionInMyClassWork.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_class_work.TestMyFunctionInMyClassWork.test_that_last_list_adder_throw_error_inValid_input.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_class_works.TestMyFunctionInMyClassWork.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_class_works.TestMyFunctionInMyClassWork.test_that_last_list_adder_exist.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_class_works.TestMyFunctionInMyClassWork.test_that_last_list_adder_return_correct_value.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_dairy.TestDiary.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_dairy.TestDiary.test_my_delete_entry_function_is_working.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_dairy.TestDiary.test_my_delete_function_is_working.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_dairy.TestDiary.test_my_diary_can_update_entry.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_dairy.TestDiary.test_that_diary_exists.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_dairy.TestDiary.test_that_my_diary_unlocks_and_then_locked.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_entry.TestEntry.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_entry.TestEntry.test_my_entry_return_error_if_title_is_null.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_entry.TestEntry.test_my_id_number_return_error_message_if_negative.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_geopolitical.TestGeoPolitical.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_my_array.MyTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_my_array.MyTestCase.test_that_get_size_returns_correct_value.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_my_array.TestMyArray.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_my_array.TestMyArray.test_my_array_add_function_return_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_my_array.TestMyArray.test_my_array_add_function_return_error_message.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_my_array.TestMyArray.test_my_array_add_items_function.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_my_array.TestMyArray.test_my_array_return_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_my_stack.TestMyStack.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_my_stack.TestMyStack.test_that_my_stack_can_add_elements.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_my_stack.TestMyStack.test_that_my_stack_can_remove_elements.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_my_stack.TestMyStack.test_that_my_stack_is_empty.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myarray.TestMyArray.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myarray.TestMyArray.test_my_array.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myarray.TestMyArray.test_my_array_add_function_return_error_message.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myarray.TestMyArray.test_my_array_add_items_function.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myarray.TestMyArray.test_my_array_can_remove_from_the_array_and_return_the_size.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myarray.TestMyArray.test_my_array_return_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myqueue.TestMyQueue.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myqueue.TestMyQueue.test_that_my_queue_can_check_the_last_element_with_out_removing_it.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myqueue.TestMyQueue.test_that_my_queue_can_remove_items_to_the_queue.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_myqueue.TestMyQueue.test_that_my_queue_throws_error_when_queue_is_empty_and_wants_to_check_the_first_element.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_set.TestMySet.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_set.TestMySet.test_mySet_add_and_get_size.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_set.TestMySet.test_mySet_can_add_all_at_once.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_set.TestMySet.test_mySet_can_remove.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_set.TestMySet.test_mySet_contains_an_element.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_set.TestMySet.test_mySet_isEmpty.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_set.TestMySet.test_my_set_add_and_get_size.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_set.TestMySet.test_my_set_can_remove_all_elements_at_once.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_set.TestMySet.test_myset_isNotEmpty.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_set.TestMySet.test_that_when_i_add_elements_to_my_set_and_i_will_get_the_data_in_the_set.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_stack.TestStack.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tv.TestTv.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tv.TestTv.test_my_tv_increase_volume.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tv.TestTv.test_my_tv_move_channel_return_error_if_not_on.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tv.TestTv.test_my_tv_unmute_function.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_tv.TestTvFunctions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Tv.executor&quot;: &quot;Run&quot;,
+    &quot;Python.account.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bankmainapp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.clas_work.executor&quot;: &quot;Run&quot;,
+    &quot;Python.class_works.executor&quot;: &quot;Run&quot;,
+    &quot;Python.diarymainapp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.encrttyptiondemo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.encrtypt_text.executor&quot;: &quot;Run&quot;,
+    &quot;Python.geopolitical.executor&quot;: &quot;Run&quot;,
+    &quot;Python.numberP.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pascaltriangle.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_encrtypt_text (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_encrtypt_text.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_list_task.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/SemicolonAssignment&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\SemicolonAssignment\ExtraWork\src" />
       <recent name="C:\Dell\SemicolonAssignment\ExtraWork\datastructure\test" />
       <recent name="C:\Dell\SemicolonAssignment\pythonClass\test" />
     </key>
@@ -151,7 +164,7 @@
       <command value="numberP" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Python tests for test_dairy.TestDiary">
     <configuration name="Python tests for test_dairy.TestDiary" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="SemicolonAssignment" />
       <option name="ENV_FILES" value="" />
@@ -232,21 +245,12 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python tests.Python tests for test_dairy.TestDiary" />
-        <item itemvalue="Python tests.Python tests for test_dairy.TestDiary.test_that_my_diary_unlocks_and_then_locked" />
-        <item itemvalue="Python tests.Python tests for test_entry.TestEntry" />
-        <item itemvalue="Python tests.Python tests for test_tv.TestTvFunctions" />
-        <item itemvalue="Python tests.Python tests for test_tv.TestTv" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PY-243.24978.54" />
-        <option value="bundled-python-sdk-91e3b7efe1d4-466328ff949b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.24978.54" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -293,6 +297,9 @@
       <workItem from="1740038515800" duration="10649000" />
       <workItem from="1740073516908" duration="1310000" />
       <workItem from="1740125059322" duration="5086000" />
+      <workItem from="1740531680332" duration="2914000" />
+      <workItem from="1740534726842" duration="4894000" />
+      <workItem from="1740560843504" duration="266000" />
     </task>
     <task id="LOCAL-00001" summary="assignment">
       <option name="closed" value="true" />
@@ -318,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740050304610</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="assignment">
+      <option name="closed" value="true" />
+      <created>1740533525371</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740533525371</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,17 +343,6 @@
     <MESSAGE value="my bike work" />
     <MESSAGE value="assignment" />
     <option name="LAST_COMMIT_MESSAGE" value="assignment" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pythonClass/class work/tiger_nut/encrtypt_text.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SemicolonAssignment$class_works.coverage" NAME="class_works Coverage Results" MODIFIED="1739354870517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ExtraWork" />
